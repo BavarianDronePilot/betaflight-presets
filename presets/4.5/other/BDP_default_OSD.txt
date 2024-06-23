@@ -1,0 +1,43 @@
+#$ TITLE: BavarianDronePilot default OSD
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: osd, hd, walksnail, display
+#$ AUTHOR: BavarianDronePilot
+#$ DESCRIPTION: Default hd osd in combination with the walksnail-system
+#$ DESCRIPTION: Choose GPS if used.
+
+# master
+set report_cell_voltage = ON
+set osd_warn_bitmask = 17407
+set osd_cap_alarm = 600
+set osd_tim2 = 1025
+set osd_vbat_pos = 2530
+set osd_link_quality_pos = 3277
+set osd_link_tx_power_pos = 3213
+set osd_rssi_dbm_pos = 3245
+set osd_tim_2_pos = 2594
+set osd_flymode_pos = 3629
+set osd_throttle_pos = 3565
+set osd_current_pos = 3595
+set osd_mah_drawn_pos = 2562
+set osd_craft_name_pos = 2082
+
+#$ OPTION BEGIN (UNCHECKED): GPS
+# -- ADDER: For builds with GPS enabled --
+    set osd_gps_speed_pos = 2402
+    set osd_gps_lon_pos = 3110
+    set osd_gps_lat_pos = 3142
+    set osd_gps_sats_pos = 2434
+    set osd_home_dir_pos = 2458
+    set osd_home_dist_pos = 2370
+#$ OPTION END
+
+set osd_warnings_pos = 14677
+set osd_avg_cell_voltage_pos = 2584
+set osd_disarmed_pos = 2519
+set osd_flip_arrow_pos = 2426
+set osd_rate_profile_name_pos = 2114
+set osd_stat_bitmask = 149412
